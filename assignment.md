@@ -25,6 +25,7 @@ returns = pd.DataFrame({
 Answer:
 
 ```python
+returns["MSFT"].corr(returns["IBM"])
 
 ```
 
@@ -45,6 +46,7 @@ df = pd.DataFrame({
 Answer:
 
 ```python
+long_df = df.melt(id_vars=["A"], value_vars=["B", "C"])
 
 ```
 
@@ -63,6 +65,7 @@ data = pd.Series(np.random.rand(len(dates)), index=dates)
 Answer:
 
 ```python
+data["2023-01-05":"2023-01-15"]
 
 ```
 
